@@ -13,13 +13,13 @@ $factory->define(Car::class, function (Faker $faker) {
     ]);
 
     return [
-        'mark' => $faker->text(20),
+        'brand' => $faker->text(20),
         'model' => $faker->text(30),
         'year' => $faker->numberBetween(1960, 2017),
-        'max_speed' => $faker->numberBetween(20, 300),
-        'is_automatic' => $faker->boolean(50),
+        'maxSpeed' => $faker->numberBetween(20, 300),
+        'isAutomatic' => $faker->boolean(50),
         'engine' => $engineType->random(),
-        'number_of_doors' => $faker->numberBetween(2, 5)
+        'numberOfDoors' => $faker->numberBetween(2, 5)
     ];
 
 });

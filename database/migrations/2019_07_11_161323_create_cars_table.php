@@ -22,8 +22,6 @@ class CreateCarsTable extends Migration
             $table->boolean('isAutomatic');
             $table->string('engine');
             $table->integer('numberOfDoors');
-            $table->timestamps();
-
         });
     }
 
